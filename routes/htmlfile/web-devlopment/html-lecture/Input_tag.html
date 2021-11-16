@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/template.css">
+    <link rel="stylesheet" href="/static/css/web-devlopment/html-lecture/Input_tag.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <title>Form in html</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+<body>
+  <!-- header section-->
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" id="logo_div">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" id="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">freecodeindia</span>
+        </a>
+        <nav
+            class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a href="/" class="mr-5 hover:text-gray-900">Home</a>
+            <a href="/start-cource" class="mr-5 hover:text-gray-900">Start learning</a>
+            <a href="/contact" class="mr-5 hover:text-gray-900">Contact</a>
+            <a href="/help" class="mr-5 hover:text-gray-900">Help</a>
+        </nav>
+        <button id="login_btn"
+            class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><a
+                href="/contact">Contact</a>
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+        </button>
+    </div>
+  </header> 
+
+  <!-- fixed navbar section -->
+  <div id="body">
+    <section class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Web-devlopment</a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+    </section>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+          <div class="position-sticky pt-3">
+            <ul class="nav flex-column">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                <span data-feather="home"></span>
+                HTML
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/Introduction_of_html">
+                <span data-feather="file"></span>
+                Introduction to html
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/html_basic">
+                <span data-feather="shopping-cart"></span>
+                Basic of html
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/Text_formatting">
+                <span data-feather="users"></span>
+                Text Formatting
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/Abbreviation">
+                <span data-feather="bar-chart-2"></span>
+                Abbreviation tag
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/Inserted_Deleted_or_Stricken">
+                <span data-feather="bar-chart-2"></span>
+                Inserted, Deleted, or Stricken
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/Superscript_and_Subscript">
+                <span data-feather="layers"></span>
+                Superscript and Subscript
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/Anchors_and_Hyperlinks">
+                <span data-feather="layers"></span>
+                Anchors and Hyperlinks
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/navigation_to_section_of_page">
+                <span data-feather="layers"></span>
+                navigation to section of page
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/orderd_lists">
+                <span data-feather="layers"></span>
+                Lists and Ordered List
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/unorderd_lists">
+                <span data-feather="layers"></span>
+                Unordered List
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/tables">
+                <span data-feather="layers"></span>
+                Tables
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/Comments">
+                <span data-feather="layers"></span>
+                Comments
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/classes-and-Ids">
+                <span data-feather="layers"></span>
+                Classes and IDs
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/Linking-script-and-css-stylesheet">
+                <span data-feather="layers"></span>
+                Linking Resources
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/including_javascript_in_html">
+                <span data-feather="layers"></span>
+                Include JavaScript Code in HTML
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/including_css_in_html">
+                <span data-feather="layers"></span>
+                Using HTML with CSS
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/inline_and_block_element">
+                <span data-feather="layers"></span>
+                HTML Block and Inline Elements
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/images-in-html">
+                <span data-feather="layers"></span>
+                Images in HTML
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/form-in-html">
+                <span data-feather="layers"></span>
+                Form in HTML
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/input-tag-in-html" id="selected">
+                <span data-feather="layers"></span>
+                input tags in html
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/div-element-in-html">
+                <span data-feather="layers"></span>
+                Div Element in html
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/section-element-in-html">
+                <span data-feather="layers"></span>
+                Section Element in html
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/main-Footer-Section-element-in-html">
+                <span data-feather="layers"></span>
+                main,Footer,Section Element in html
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/label-tag-in-html">
+                <span data-feather="layers"></span>
+                Label tag in html
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/Media-audio-video-tag-in-html">
+                <span data-feather="layers"></span>
+                Media(Audio and Video) in html
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/html-layout">
+                <span data-feather="layers"></span>
+                HTML Layout
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/responsive-webdesign">
+                <span data-feather="layers"></span>
+                Responsive Web Design
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/start-cource/web-devlopment/iframe-in-html">
+                <span data-feather="layers"></span>
+                Iframe in html
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <div class="content">
+               
+              <div id="content-1-heading">
+                <h1>20 Lecture</h1>
+                <h1>Input tag in html</h1>
+              </div>
+
+              <div id="defination">
+                <p>
+                  The <b><span><</span><span>input></span></b> tag specifies an input field where the user can enter data.
+                </p>
+                <p>
+                  The <b><span><</span><span>input></span></b> element is the most important form element.
+                </p>
+                <p>
+                  The <b><span><</span><span>input></span></b> element can be displayed in several ways, depending on the type attribute.
+                </p>
+              </div><br>
+              
+              <div>
+                <div>
+                  <h2 class="sub_heading">19.1 The different input types are as follows:</h2>
+              </div>
+                <div id="different_types_ofinput_tag">
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="button"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="checkbox"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="color"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="date"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="datetime-local"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="email"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="file"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="hidden"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="text"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="image"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="month"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="password"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="radio"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="range"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="reset"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="submit"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="time"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="tel"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="url"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="week"></span></span></p>
+                  </div>
+                  <div>
+                    <p><span class="pink"><span><</span><span>input type="number"></span></span></p>
+                </div>
+              </div><br>
+                
+                <div>
+                  <h2 class="main_heading">19.2 Tags used in input tag</h2>
+                  <div>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Parameter</th>
+                          <th>Details</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span class="blue">class</span></td>
+                          <td>Indicates the Class of the input</td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">id</span></td>
+                          <td>Indicates the ID of the input</td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">type</span></td>
+                          <td>Identifies the type of input control to display. Acceptable values are hidden, text, tel, url, email,
+                            password, date, time, number, range, color, checkbox, radio, file, submit, image, reset, and button.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">name</span></td>
+                          <td>Indicates the name of the input</td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">disabled</span></td>
+                          <td>
+                            Boolean value that indicates the input should be disabled. Disabled controls cannot be edited, are
+                            not sent on form submission, and cannot receive focus.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">checked</span></td>
+                          <td>
+                            When the value of the type attribute is radio or checkbox, the presence of this Boolean attribute
+                            indicates that the control is selected by default; otherwise it is ignored
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">multiple</span></td>
+                          <td>HTML5 Indicates multiple files or values can be passed (Applies only to file and email type inputs ).</td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">placeholder</span></td>
+                          <td>HTML5 A hint to the user of what can be entered in the control . The placeholder text must not
+                            contain carriage returns or line-feeds</td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">autocomplete</span></td>
+                          <td>HTML5 Indicates whether the value of the control can be automatically completed by the browser.</td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">readonly</span></td>
+                          <td>
+                            Boolean value that indicates the input is not editable. Readonly controls are still sent on form
+                            submission, but will not receive focus. HTML5: This attribute is ignored when the value of type
+                            attribute is either set to hidden, range, color, checkbox, radio, file or button.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">required</span></td>
+                          <td>
+                            HTML5 Indicates a value must be present or the element must be checked in order for the form to
+                            be submitted
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">alt</span></td>
+                          <td>An alternative text for images, in case they are not displayed.</td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">autofocus</span></td>
+                          <td>The <b><span><</span><span>input></span></b> element should get the focus when page loads.</td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">value</span></td>
+                          <td>Specifies the value of <b><span><</span><span>input></span></b> element.</td>
+                        </tr>
+                        <tr>
+                          <td><span class="blue">step</span></td>
+                          <td>
+                            The step attribute specifies the legal number intervals. It works with the following input types:
+                            number, range, date, datetime-local, month, time and week.</td>
+                          </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <p>
+                      A key component of interactive web systems, input tags are HTML elements designed to take a specific form of
+                      input from users. Different types of input elements can regulate the data entered to fit a specified format and
+                      provide security to password entry.
+                    </p>
+                </div>
+                <div>
+                  <h2 class="sub_heading">Input type text</h2>               
+                  <div class="code_img">
+                    <img src="/static/img/html/input 20/20.png" alt="input type text" class="img">
+                    <img src="/static/img/html/input 20/20_1.png" alt="input type text" class="img">
+                  </div>
+                </div>
+                <div>
+                  <h2 class="sub_heading">Input type password</h2>               
+                  <div class="code_img">
+                    <img src="/static/img/html/input 20/20_2.png" alt="input type text" class="img">
+                    <img src="/static/img/html/input 20/20_3.png" alt="input type text" class="img">
+                  </div>
+                </div>
+                <h2>Similary practice all the tags one by one.</h2>
+
+                <!-- pagination -->
+                <div class="demo">
+                  <nav class="pagination-outer" aria-label="Page navigation">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a href="/start-cource/web-devlopment/including_css_in_html" class="page-link" aria-label="Previous">
+                            <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="/start-cource/web-devlopment/images-in-html">18</a></li>
+                      <li class="page-item"><a class="page-link" href="/start-cource/web-devlopment/form-in-html">19</a></li>
+                      <li class="page-item active"><a class="page-link" href="/start-cource/web-devlopment/input-tag-in-html">20</a></li>
+                      <li class="page-item"><a class="page-link" href="/start-cource/web-devlopment/div-element-in-html">21</a></li>
+                      <li class="page-item"><a class="page-link" href="/start-cource/web-devlopment/section-element-in-html">22</a></li>
+                      <li class="page-item">
+                        <a href="/start-cource/web-devlopment/div-element-in-html" class="page-link" aria-label="Next">
+                            <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                  </ul>
+                  </nav>
+                </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer section -->
+  <footer class="text-gray-600 body-font">
+  <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                  viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <span class="ml-3 text-xl">freecodeindia.com</span>
+          </a>
+          <p class="mt-2 text-sm text-gray-500">A free website to learn cording step by step join us.</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Follow</h2>
+              <nav class="list-none mb-10">
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800">facebook</a>
+                  </li>
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800">Linkedin</a>
+                  </li>
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800">Instagram</a>
+                  </li>
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800">Youtube</a>
+                  </li>
+              </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Language</h2>
+              <nav class="list-none mb-10">
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800">Javascript</a>
+                  </li>
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800">python</a>
+                  </li>
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800">Java</a>
+                  </li>
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800">C</a>
+                  </li>
+              </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">More Languages</h2>
+              <nav class="list-none mb-10">
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800">C++</a>
+                  </li>
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800">Node js</a>
+                  </li>
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800">Android devlopment</a>
+                  </li>
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800">Web devlopment</a>
+                  </li>
+              </nav>
+          </div>
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Freecodeindia.com</h2>
+              <nav class="list-none mb-10">
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800" href="/">Home</a>
+                  </li>
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800" href="/start-cource">Start learning</a>
+                  </li>
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800">About</a>
+                  </li>
+                  <li>
+                      <a class="text-gray-600 hover:text-gray-800" href="/help">Help</a>
+                  </li>
+              </nav>
+          </div>
+      </div>
+  </div>
+  <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 freecodeindia.com —
+              <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
+                  target="_blank">@satyamandshivam</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      class="w-5 h-5" viewBox="0 0 24 24">
+                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      class="w-5 h-5" viewBox="0 0 24 24">
+                      <path
+                          d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                      </path>
+                  </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                      <path stroke="none"
+                          d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                      </path>
+                      <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                  </svg>
+              </a>
+          </span>
+      </div>
+  </div>
+  </footer>
+
+</body>
+</html>

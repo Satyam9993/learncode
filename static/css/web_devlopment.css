@@ -1,0 +1,694 @@
+/* ================================================css reset ======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.102rem;
+}
+
+/*================================================  body  ============================================*/
+
+body{
+    background-color: rgb(230, 230, 230);
+}
+
+/*========================================    header section    ======================================*/
+header{
+    background-color: rgb(236, 236, 236);
+}
+.p-5 {
+    padding: 0.9rem;
+}
+
+/* header section */
+header{
+    background-color: rgb(236, 236, 236);
+}
+
+header .p-5 {
+    padding: 0.8rem;
+}
+
+/* footer section */
+footer{
+    font-size: 1.1rem;
+    background-color: rgb(236, 236, 236);
+}
+
+
+/* hero */
+:root {
+    --color: #4973ff;
+  }
+  
+  .hero {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-sherif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .hero {
+    position: relative;
+    background: #333333;
+    color: white;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .hero h2 {
+    position: relative;
+    z-index: 1;
+    font-size: 4.5rem;
+    margin: 0 0 10px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .hero p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.4;
+  }
+  
+  /* ========================= */
+  
+  .waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: var(--color);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 500ms;
+  }
+  
+  .waves::before,
+  .waves::after {
+    content: '';
+    position: absolute;
+    width: 300vw;
+    height: 300vw;
+    top: -65vw;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  }
+  
+  .waves::before {
+    border-radius: 44%;
+    background: rgba(51, 51, 51, 1);
+    animation: waves 8s linear infinite;
+  }
+  
+  .waves::after {
+    border-radius: 44%;
+    background: rgba(51, 51, 51, 0.5);
+    animation: waves 15s linear infinite;
+  }
+  
+  @keyframes waves {
+    0% {
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+    
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
+  
+  @media screen and (max-width:800px){
+	  .hero{
+		  display: none;
+	  }
+  }
+
+/* ======================================  text animation  =========================================== */
+@keyframes typed {
+	
+	0%, 0.5182107996% {
+		content: "f";
+   }
+	0.5192107996%, 1.0374215992% {
+		content: "fr";
+   }
+	1.0384215992%, 1.5566323988% {
+		content: "fre";
+   }
+	1.5576323988%, 2.0758431983% {
+		content: "free";
+   }
+	2.0768431983%, 2.5950539979% {
+		content: " freec";
+   }
+	2.5960539979%, 3.1142647975% {
+		content: "freeco";
+   }
+	3.1152647975%, 3.6334755971% {
+		content: "freecod";
+   }
+	3.6344755971%, 4.1526863967% {
+		content: "freecode";
+   }
+	4.1536863967%, 4.6718971963% {
+		content: "freecode";
+   }
+	4.6728971963%, 5.1911079958% {
+		content: "freecodei";
+   }
+	5.1921079958%, 5.7103187954% {
+		content: "freecodein";
+   }
+	5.7113187954%, 6.229529595% {
+		content: "freecodind";
+   }
+	6.230529595%, 6.7487403946% {
+		content: "freecodeindi";
+   }
+	6.7497403946%, 7.2679511942% {
+		content: "freecodeindia";
+   }
+	7.2689511942%, 7.7871619938% {
+		content: "freecodeindia.";
+   }
+	7.7881619938%, 8.3063727934% {
+		content: "freecodeindia.c";
+   }
+	8.3073727934%, 8.8255835929% {
+		content: "freecodeindia.co";
+   }
+	8.8265835929%, 9.3447943925% {
+		content: "freecodeindia.com";
+   }
+	9.3457943925%, 9.8640051921% {
+		content: "freecodeindia.com ";
+   }
+	9.8650051921%, 10.3832159917% {
+		content: "freecodeindia.com !";
+   }
+	10.3842159917%, 10.9024267913% {
+		content: "freecodeindia.com !!";
+   }
+	10.9034267913%, 22.2212222222% {
+		content: "freecodeindia.com !!!";
+   }
+	22.2222222222%, 22.6365908619% {
+	   content: "freecodeindia.com !!";
+   }
+	22.6375908619%, 23.0519595016% {
+	   content: "freecodeindia.com !";
+   }
+	23.0529595016%, 23.4673281412% {
+	   content: "freecodeindia.com ";
+   }
+	23.4683281412%, 23.8826967809% {
+	   content: "freecodeindia.com";
+   }
+	23.8836967809%, 24.2980654206% {
+	   content: "freecodeindia.co";
+   }
+	24.2990654206%, 24.7134340602% {
+	   content: "freecodeindia.c";
+   }
+	24.7144340602%, 25.1288026999% {
+	   content: "freecodeindia.";
+   }
+	25.1298026999%, 25.5441713396% {
+	   content: "freecodeindia";
+   }
+	25.5451713396%, 25.9595399792% {
+		content: "freecodeindi";
+   }
+	25.9605399792%, 26.3749086189% {
+		content: "freecodeind";
+   }
+	26.3759086189%, 26.7902772586% {
+		content: "freecodein";
+   }
+	26.7912772586%, 27.2056458982% {
+		content: "freecodei";
+   }
+	27.2066458982%, 27.6210145379% {
+		content: "freecode";
+   }
+	27.6220145379%, 28.0363831776% {
+		content: "freecod";
+   }
+	28.0373831776%, 28.4517518172% {
+		content: "freeco";
+   }
+	28.4527518172%, 28.8671204569% {
+		content: "freec";
+   }
+	28.8681204569%, 29.2824890966% {
+		content: "free";
+   }
+	29.2834890966%, 29.6978577362% {
+		content: "fre";
+   }
+	29.6988577362%, 30.1132263759% {
+		content: "fr";
+   }
+	30.1142263759%, 30.5285950156% {
+		content: "f";
+   }
+	30.5295950156%, 35.9439636552% {
+		content: "";
+   }
+	35.9449636552%, 36.1360716511% {
+		content: "W​";
+   }
+	36.1370716511%, 36.6552824507% {
+		content: "WE";
+   }
+	36.6562824507%, 37.1744932503% {
+		content: "WEB";
+   }
+	37.1754932503%, 37.6937040498% {
+		content: "WEB- ";
+   }
+	37.6947040498%, 38.2129148494% {
+		content: "WEB-D";
+   }
+	38.2139148494%, 38.732125649% {
+		content: "WEB-DE";
+   }
+	38.733125649%, 39.2513364486% {
+		content: "WEB-DEV";
+   }
+	39.2523364486%, 39.7705472482% {
+		content: "WEB-DEVL";
+   }
+	39.7715472482%, 40.2897580478% {
+		content: "WEB-DEVLO";
+   }
+	40.2907580478%, 40.8089688474% {
+		content: "WEB-DEVLOP";
+   }
+	40.8099688474%, 41.3281796469% {
+		content: "WEB-DEVLOPM";
+   }
+	41.3291796469%, 41.8473904465% {
+		content: "WEB-DEVLOPME";
+   }
+	41.8483904465%, 42.3666012461% {
+		content: "WEB-DEVLOPMEN";
+   }
+	42.3676012461%, 42.8858120457% {
+		content: "WEB-DEVLOPMENT";
+   }
+	42.8868120457%, 43.4050228453% {
+		content: "WEB-DEVLOPMENT F";
+   }
+	43.4060228453%, 43.9242336449% {
+		content: "WEB-DEVLOPMENT FU";
+   }
+	43.9252336449%, 44.4434444444% {
+		content: "WEB-DEVLOPMENT FUL";
+   }
+	44.4444444444%, 44.962655244% {
+		content: "WEB-DEVLOPMENT FULL";
+   }
+	44.963655244%, 45.4818660436% {
+		content: "WEB-DEVLOPMENT FULL C";
+   }
+	45.4828660436%, 46.0010768432% {
+		content: "WEB-DEVLOPMENT FULL CO";
+   }
+	46.0020768432%, 46.5202876428% {
+		content: "WEB-DEVLOPMENT FULL COU";
+   }
+	46.5212876428%, 47.0394984424% {
+		content: "WEB-DEVLOPMENT FULL COUR";
+   }
+	47.0404984424%, 47.558709242% {
+		content: "WEB-DEVLOPMENT FULL COURS";
+   }
+	47.559709242%, 48.0779200415% {
+		content: "WEB-DEVLOPMENT FULL COURSE";
+   }
+	48.0789200415%, 48.5971308411% {
+		content: "WEB-DEVLOPMENT FULL COURSE ";
+   }
+	48.5981308411%, 49.1163416407% {
+		content: "WEB-DEVLOPMENT FULL COURSE 🤗";
+   }
+	49.1173416407%, 60.4351370717% {
+		content: "WEB-DEVLOPMENT FULL COURSE 🤗🤗";
+   }
+	60.4361370717%, 60.8505057113% {
+		content: "WEB-DEVLOPMENT FULL COURSE 🤗";
+   }
+	60.8515057113%, 61.265874351% {
+		content: "WEB-DEVLOPMENT FULL COURSE ";
+   }
+	61.266874351%, 61.6812429907% {
+		content: "WEB-DEVLOPMENT FULL COURSE";
+   }
+	61.6822429907%, 62.0966116303% {
+		content: "WEB-DEVLOPMENT FULL COURS";
+   }
+	62.0976116303%, 62.51198027% {
+		content: "WEB-DEVLOPMENT FULL COUR";
+   }
+	62.51298027%, 62.9273489097% {
+		content: "WEB-DEVLOPMENT FULL COU";
+   }
+	62.9283489097%, 63.3427175493% {
+		content: "WEB-DEVLOPMENT FULL CO";
+   }
+	63.3437175493%, 63.758086189% {
+		content: "WEB-DEVLOPMENT FULL C";
+   }
+	63.759086189%, 64.1734548287% {
+		content: "WEB-DEVLOPMENT FULL ";
+   }
+	64.1744548287%, 64.5888234683% {
+		content: "WEB-DEVLOPMENT FULL";
+   }
+	64.5898234683%, 65.004192108% {
+		content: "WEB-DEVLOPMENT FUL";
+   }
+	65.005192108%, 65.4195607477% {
+		content: "WEB-DEVLOPMENT FU";
+   }
+	65.4205607477%, 65.8349293873% {
+		content: "WEB-DEVLOPMENT F";
+   }
+	65.8359293873%, 66.250298027% {
+		content: "WEB-DEVLOPMENT ";
+   }
+	66.251298027%, 66.6656666667% {
+		content: "WEB-DEVLOPMENT";
+   }
+	66.6666666667%, 67.0810353063% {
+		content: "WEB-DEVLOPMEN";
+   }
+	67.0820353063%, 67.496403946% {
+		content: "WEB-DEVLOPME";
+   }
+	67.497403946%, 67.9117725857% {
+		content: "WEB-DEVLOPM";
+   }
+	67.9127725857%, 68.3271412253% {
+		content: "WEB-DEVLOP";
+   }
+	68.3281412253%, 68.742509865% {
+		content: "WEB-DEVLO";
+   }
+	68.743509865%, 69.1578785047% {
+		content: "WEB-DEVL";
+   }
+	69.1588785047%, 69.5732471443% {
+		content: "WEB-DEV";
+   }
+	69.5742471443%, 69.988615784% {
+		content: "WEB-DE";
+   }
+	69.989615784%, 70.4039844237% {
+		content: "WEB-D";
+   }
+	70.4049844237%, 70.8193530633% {
+		content: "WEB-";
+   }
+	70.8203530633%, 71.2114610592% {
+		content: "WEB​";
+   }
+   71.2114610592%, 72.0306718588% {
+		content: "WE";
+   }
+   72.0306718588%, 73.4498826584% {
+		content: "W";
+   }
+   73.4498826584%, 80.8690934579% {
+		content: "";
+   }
+   80.8690934579%, 81.2883042575% {
+		content: "S";
+   }
+   81.2883042575%, 82.8075150571% {
+		content: "ST";
+   }
+   82.8075150571%, 83.1267258567% {
+		content: "STA";
+   }
+   83.1267258567%, 84.9459366563% {
+		content: "STAR";
+   }
+   84.9459366563%, 85.651474559% {
+		content: "START";
+   }
+   85.651474559%, 86.0839428868% {
+		content: "START ";
+   }
+   86.0839428868%, 87.8993115265% {
+		content: "START I";
+   }
+   87.8993115265%, 88.5146801661% {
+		content: "START IT";
+   }
+   88.5146801661%, 89.7300488058% {
+		content: "START I";
+   }
+   89.7300488058%, 90.2454174455% {
+		content: "START ";
+   }
+   90.2454174455%, 91.5607860852% {
+		content: "START";
+   }
+	91.5617860852%, 92.9761547248% {
+		content: "STAR";
+   }
+	92.9771547248%, 93.3915233645% {
+		content: "STA";
+   }
+	93.3925233645%, 94.8068920042% {
+		content: "ST";
+   }
+	94.8078920042%, 95.322323233% {
+		content: "S​";
+   }
+   95.322323233%, 100% {
+		content: "";
+   }
+}
+@keyframes beam-blink {
+	75% {
+		border-color: transparent;
+   }
+}
+* {
+	backface-visibility: hidden;
+}
+html, main {
+	height: 100%;
+}
+text_animation {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-repeat: repeat-y;
+	background-position: center center;
+	background-size: cover, 100% 3px;
+	font-size: calc(10px + 2vw);
+	font-family: 'VT323', monospace, sans-serif;
+	color: rgba(51, 255, 51, 0.75);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 200px;
+	width: 80%;
+	margin: 0 auto;
+}
+text_animation::after {
+	content: "​";
+	position: relative;
+	top: -13px;
+	display: inline-block;
+	padding-right: 3px;
+	padding-right: calc(3px + 0.1vw);
+	border-right: 10px solid rgba(51, 255, 51, 0.75);
+	border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+	text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+	white-space: nowrap;
+	animation: typed 19.26s linear 1s infinite, beam-blink 1s infinite;
+}
+@media (max-width: 575px) {
+	text_animation::after {
+		top: -33px;
+   }
+}
+
+
+/*============================== nav selected  and footer selecter ====================================*/
+
+#selected{
+    text-decoration: 2px solid underline black;
+}
+ 
+/* ==========================================  main  =================================================== */
+
+main{
+    height: 300px;
+}
+
+
+
+/*======================================== footer section ==============================================*/
+footer{
+    font-size: 1.1rem;
+    background-color: rgb(236, 236, 236);
+}
+
+
+/*============================================  card section =============================================== */
+
+.content {
+    max-width: 80%;
+    width: 100%;
+    padding: 0 4%;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        /* padding-top: 300px; */
+        flex-direction: column;
+		padding: 10px;
+   }
+}
+.card {
+    width: 100%;
+    max-width: 262px;
+    min-width: 261px;
+    height: 300px;
+    background-color: #292929;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.icon {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width: 80px;
+    background: linear-gradient(90deg, #ff7e7e 0%, #ff4848 40%, rgba(0, 0, 0, 0.28) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+}
+.material-icons.md-18 {
+    font-size: 18px;
+}
+.material-icons.md-24 {
+    font-size: 24px;
+}
+.material-icons.md-36 {
+    font-size: 36px;
+}
+.material-icons.md-48 {
+    font-size: 48px;
+}
+.card .title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.card .text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.3s ease;
+}
+.card:hover {
+    height: 270px;
+}
+.card:hover .info {
+    height: 90%;
+}
+.card:hover .text {
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height: 40px;
+}
+.card:hover .icon {
+    background-position: -120px;
+    transition: all 0.3s ease;
+}
+.card:hover .icon i {
+    background: linear-gradient(90deg, #ff7e7e, #ff4848);
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 350px) {
+    .content {
+		margin-top: -300px;
+        flex-direction: column;
+		margin: 0;
+   }
+}
+
+/* strat cource btn css */
+
+.btn_course{
+    background-color: rgb(58, 233, 35);
+    color: black;
+    padding: 7px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* resitration form */
+
+#registor{
+	width: 80%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width:310px){
+	body{
+		width: 109%;
+	}
+}

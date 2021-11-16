@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+*{
+    font-size: 1.102rem;
+}
+
+/* body */
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* header section */
+header{
+    background-color: rgb(236, 236, 236);
+}
+.p-5 {
+    padding: 0.9rem;
+}
+/* intro section */
+
+#main_img{
+    box-shadow: 0px 10px 50px rgba(194, 194, 194, 0.808);
+}
+
+#section_intro {
+    padding: 1rem;
+}
+
+
+.feature_img{
+    box-shadow: 0px 10px 50px rgba(164, 165, 164, 0.7);
+}
+
+/* step section */
+
+#step_section{
+    padding: 1.5rem;
+}
+
+#step_section{
+    margin: 30px;
+    padding: 30px;
+}
+
+/* feature section */
+#feature_section{
+    margin: 20px;
+}
+
+/* footer section */
+footer{
+    font-size: 1.1rem;
+    background-color: rgb(236, 236, 236);
+}
+
+/* nav selected */
+
+#selected{
+    text-decoration: 2px solid underline black;
+}
+
+/* nav hover */
+nav a:hover{
+    text-decoration: 2px solid underline black;
+}

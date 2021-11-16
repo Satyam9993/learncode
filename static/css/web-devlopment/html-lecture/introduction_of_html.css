@@ -1,0 +1,392 @@
+/*============================================= css reset ======================================*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+*{
+    font-size: 1.102rem;
+	box-sizing: border-box;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+/* =============================================== body ========================================*/
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+#head_red{
+    color: rgb(218, 36, 36);
+}
+
+  /* header */
+  .p-5 {
+    padding: 1rem!important;
+}
+
+/* logo */
+
+#logo {
+    margin-top: 3px;
+    margin-bottom: 3px !important;
+}
+#login_btn{
+    margin-top: 3px !important;
+}
+
+
+/* header and footer background */
+header,footer{
+    background-color: #f8f9fa!important;
+}
+
+/*  header nav selected */
+#selected{
+    text-decoration: 2px solid underline black;
+}
+
+/* nav hover */
+nav a:hover{
+    text-decoration: 2px solid underline black;
+}
+/* ============================================== header =============================================== */
+.p-5 {
+    padding: 10px !important;
+}
+
+/* ======================================== main content and dark mode   ================================*/
+#mode{  
+    position: absolute;
+    top: 173px;
+    right: 4%;
+}
+
+@media screen and (max-width:523px){
+    #mode {
+        position: absolute;
+        top: 120px;
+        right: 5%;
+    }
+}
+@media screen and (max-width:600px){
+    #mode {
+        display: none;
+    }
+}
+
+@media screen and (max-width:369px){
+    #mode {
+        position: absolute;
+        top: 120px;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:369px){
+    #mode {
+        position: absolute;
+        top: 256px;
+        right: 5%;
+    }
+}
+
+#heading{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+main.night {
+    background: #00151f
+}
+
+body.dark {
+	background: #292C35;
+}
+
+.toggle {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.toggle:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+    font-size: 15px;
+}
+
+.fa-sun {
+	color: #f39c12;
+    font-size: 15px;
+}
+
+.toggle {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    background: #fff;
+    border: 2px solid #00151f;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+.toggle.active {
+    background: #00151f;
+    border: 2px solid #fff
+}
+
+.toggle:before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #00151f;
+    border-radius: 50%;
+    transition: 0.5s
+}
+
+.toggle.active:before {
+    left: 27px;
+    background: #fff
+}
+
+
+.content{
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 100%;
+}
+
+.content h1{
+    margin: 0 0 20px;
+    padding: 0;
+    color: #000;
+    transition: 0.5s
+}
+
+.content ul li{
+    padding: 0;
+    color: #000;
+}
+
+.content h3,h2{
+    margin: 0 0 20px;
+    padding: 0;
+    color: #000;
+    transition: 0.5s
+}
+
+.content p,h2 {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    transition: 0.5s;
+}
+
+body.dark .content h1,
+body.dark .content p{
+    color: #fff
+}
+
+body.dark .content h3,
+body.dark .content ul li{
+    color: #fff
+}
+
+@media screen and (min-width:430px){
+    main{
+        padding-left: 6%;
+        padding-right: 6%;
+        
+    }
+}
+
+@media screen and (max-width:430px){
+    main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* heading img */
+.heading_img img{
+    padding-top: 20px;
+}
+.editor{
+    padding-top: 20px;
+}
+
+/* responsive website for  dark and night mode*/
+
+@media only screen and (max-width: 550px){
+    .toggle {
+        position: absolute;
+        top: 237px;
+        right: 15px;
+    }
+}
+
+
+/* =========================================== code section ====================================*/
+
+code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+#comment{
+    font-size: 1rem;
+}
+
+#code{
+    background-color: #00151f;
+    width: 90%;
+    padding: 1.4rem;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+#voilet{
+    color: blueviolet;
+}
+#gray{
+    color: gray;
+}
+#green{
+    color: green;
+}
+#darkyellow{
+    color: rgb(179, 165, 39);
+}
+#yellow{
+    color: #db8000;
+}
+#white{
+    color: rgb(253, 253, 253);
+}
+
+/* =========================================== table section ====================================*/
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+    .nav-pills-custom .nav-link::before {
+        content: '';
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+
+#tags_discription{
+    padding: 30px 10px 30px 10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.fade:not(.show) {
+    opacity: 1;
+}
+
+/* =============================================  code editor ======================================= */
+/* #code_editor{
+    margin-top: 20px;
+    margin-bottom: 20px;
+} */
+
+/* =========================================== pagination section ====================================*/
+
+.pagination-outer{ text-align: center; }
+.pagination{
+    font-family: 'Itim', cursive;
+    border-radius: 10px 10px 0 0;
+    border-top: 10px solid #ff9f1a;
+    display: inline-flex;
+    margin-top: 20px;
+}
+.pagination li{
+    padding: 5px 0;
+    margin: 0 5px;
+}
+.pagination li a.page-link{
+    color: rgb(161, 158, 158);
+    background: transparent;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 30px;
+    height: 33px;
+    width: 43px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ff9f1a;
+    border-radius: 0;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.pagination li.active a.page-link,
+.pagination li a.page-link:hover,
+.pagination li.active a.page-link:hover,
+.pagination li a.page-link:focus{
+    color: rgb(0, 0, 0);
+    background: #ff9f1a;
+    line-height: 38px;
+    height: 41px;
+    margin: -5px 0 -3px;
+    border: 1px solid #ff9f1a;
+}
+@media only screen and (max-width: 480px){
+    .pagination{
+        font-size: 0;
+        display: block;
+    }
+    .pagination li{ display: inline-block; }
+}
+
+/* setting boldness of <b> tag inside .code*/
+.code b{
+    font-weight: 550;
+}
